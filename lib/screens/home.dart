@@ -5,7 +5,7 @@ import '../models/favorites.dart';
 import 'favorites.dart';
 
 class HomePage extends StatelessWidget {
-  static String routeName = '/';
+  static String routeName = '/home';
 
   const HomePage({super.key});
 

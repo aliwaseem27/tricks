@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
+import 'package:tricks/presentation/pages/UserListScreen.dart';
 import 'models/favorites.dart';
 import 'screens/favorites.dart';
 import 'screens/home.dart';
@@ -25,6 +26,11 @@ final _router = GoRouter(
         ),
       ],
     ),
+    GoRoute(
+        path: UserListScreen.routeName,
+        builder: (context, state) {
+          return const UserListScreen();
+        })
   ],
 );
 
