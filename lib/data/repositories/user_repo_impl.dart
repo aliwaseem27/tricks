@@ -19,7 +19,7 @@ class UserRepoImpl implements IUserRepository {
   }
 
   @override
-  Future<List<User>> getAllUsers() {
-    return Future.value(allUsers);
+  Stream<List<User>> getAllUsers() async* {
+    yield allUsers;
   }
 }
